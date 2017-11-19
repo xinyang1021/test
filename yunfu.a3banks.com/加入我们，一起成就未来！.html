@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全国首创，一个永远不会亏本的项目！</title>
+	<link rel="stylesheet" type="text/css" href="static/wap/marketing/jquery.fullPage.css">
+	<link type="text/css" rel="stylesheet" href="static/wap/marketing/style.css">
+	<script src="static/wap/marketing/less.min.js" type="text/javascript"></script>
+	<script src="static/wap/marketing/jquery.min.js" type="text/javascript"></script>
+	<script src="static/wap/marketing/jquery.slimscroll.min.js" type="text/javascript"></script>
+	<script src="static/wap/marketing/jquery.fullPage.min.js" type="text/javascript"></script>
+	<script src="static/wap/marketing/script.js" type="text/javascript"></script>
+</head>
+<body class="pcindex fp-viewing-fifthPage" style="overflow: hidden; height: 100%;">
+	<div id="fullpage" class="fullpage-wrapper" style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, -6820px, 0px); transition: all 700ms ease;">
+	    
+	    <div class="first section fp-section active" data-anchor="firstPage" style="height: 1705px;">
+	        <div class="container">
+	            <img class="banner1" style="width:100%;height:100%;display:block;" src="static/wap/marketing/bg_1.jpg">
+				<img class="up" style="position:absolute;left:50%;bottom:5px;width:10%;display:block;margin-left:-5%;" class="up" src="static/wap/marketing/up.png">
+	        </div>
+	    </div>
+	    <div class="second section fp-section" data-anchor="secondPage" style="height: 100%;overflow:hidden;">
+	        <div class="container" style="height: 100%;overflow:hidden;">
+	            <!-- <img style="width:100%;display:block;" src="static/wap/marketing/2.png"> -->
+				<div class="videoBox" style="height: 100%;overflow:hidden;">
+					<div class="videoTop" style="width:100%;height:100%;overflow:hidden;position:relative;">
+						<img style="width:100%;height:100%;display:block;" src="static/wap/marketing/bg2.png">
+						<div class="content" style="position:absolute;left:50%;top:38%;margin-left:-48%;width:96%;overflow:hidden;">
+							<video class="videobox" controls="controls" autoplay="autoplay" style="width:100%;overflow:hidden;height:180px;margin:0 auto;">
+							<source src="https://img-s.find2c.com/Upload/video/yunfuck.mp4" type="video/mp4" />
+							Your browser does not support the video tag.
+							</video>
+												</div>
+	                    <div style="position:absolute;bottom:0;left:50%;width:90%;margin-left:-45%;display:block;">
+	                        <img style="width:100%;margin:10px auto;" src="static/wap/marketing/lititle.png">
+	                        <img style="width:100%;margin-bottom:5px;" onclick="ToRegister()" src="static/wap/marketing/button.png">
+	                    </div>
+
+						<!--<div class="video" style="width:94%;position:absolute;left:50%;margin-left:-47%;top:70%;">-->
+							<!--&lt;!&ndash;<div style="width:94%;margin:20px auto;height:200px;background:#fff;border-radius:4px;overflow:hidden;">&ndash;&gt;-->
+							<!--&lt;!&ndash;&lt;!&ndash;<iframe scrolling="yes" style="width:100%;height:100%;overflow:hidden;" src="https://v.qq.com/x/page/b0348zjgaby.html"></iframe>&ndash;&gt;&ndash;&gt;-->
+							<!--&lt;!&ndash;</div>&ndash;&gt;-->
+							<!--&lt;!&ndash;<video style="width:100%;overflow:hidden;margin:0 auto;" class="" autoplay="autoplay" poster="static/wap/marketing/video_demo.png" loop="" controls="" width="320" height="280">&ndash;&gt;-->
+								<!--&lt;!&ndash;<source src="https://img-s.find2c.com/Upload/video/yunfuck.mp4" type="video/mp4">&ndash;&gt;-->
+							<!--&lt;!&ndash;</video>&ndash;&gt;-->
+	                        <!---->
+	                            <!--<video controls="controls" autoplay="autoplay" style="width:100%;overflow:hidden;height:300px;">-->
+	                                <!--<source src="https://img-s.find2c.com/Upload/video/yunfuck.mp4" type="video/mp4" />-->
+	                                <!--Your browser does not support the video tag.-->
+	                            <!--</video>-->
+	                            <!---->
+							<!---->
+							<!--<img style="width:100%;margin:10px auto 20px;" src="static/wap/marketing/info.png">-->
+							<!--<div class="joinBtn" style="overflow:hidden;position:relative;">-->
+								<!--&lt;!&ndash; <img style="width:25%;text-align:center;display:block;margin:0 auto;" src="static/wap/marketing/logo.png"> &ndash;&gt;-->
+								<!--<input style="width:70%;display:block;font-size:16px;margin:30px auto 30px;background:url('static/wap/marketing/btn.png');background-size:100% 100%;border:none;height:50px;text-align:center;font-weight:bold;color:#fff;" value="立即加入">-->
+								<!--<img onclick="ToRegister()" style="position:absolute;left:0;bottom:0;width:100%;" src="static/wap/marketing/btnBg.png">-->
+							<!--</div>-->
+						<!--</div>-->
+					</div>
+				</div>
+	        </div>
+	    </div>
+	</div>
+    <script type="text/javascript" src="static/wap/marketing/jquery.js"></script>
+	<script>
+		$(window).load(function(){
+			fade(1);
+			changeSize();
+		})
+	    changeSize();
+	    function ToRegister(){
+	        var url = "https://yunfu.a3banks.com/wap.php?m=reg&a=reg&invite_mobile=2667737&platform=2";
+	        location.href = url;
+	    }
+		$(window).scroll(function () {
+	        var myVideo = document.getElementsByTagName('video')[0];
+			var reH = $("#recommon").height();
+			var scrollTop = $(this).scrollTop();
+			var scrollHeight = $(document).height();
+			var windowHeight = $(this).height();
+			if (scrollTop + windowHeight > scrollHeight) {
+				//此处是滚动条到底部时候触发的事件，在这里写要加载的数据，或者是拉动滚动条的操作
+				//alert('到底了')
+	//			$(".banner22").show();
+	//			$(".banner22").animate({"scrollTop":"0px"},1000);
+				$("#recommon").hide();
+			}else{
+	//			$(".banner22").hide();
+				$("#recommon").show();
+				$("#recommon").animate({"scrollTop":"0px"},1000);
+			}
+		});
+		$(window).resize(function(){
+			changeSize();
+		})
+		//窗体改变大小
+		function changeSize(){
+			var winH = $(window).height();
+			var banH = $(".banner1").height();
+			if( banH > winH ){
+				var TobomH = banH - winH;
+				//console.log(TobomH);
+				//$(".up").css({"bottom":-TobomH+10});
+			}
+	        if( winH > 450 ){
+	            $(".banner1").attr('src','static/wap/marketing/bg.png');
+	            $(".videobox").css({"height":"200px"});
+	        }else{
+	            $(".banner1").attr('src','static/wap/marketing/bg_1.jpg');
+	            $(".videobox").css({"height":"120px"});
+	        }
+		}
+		//定时器
+		function fade(t){
+			if(t){
+				$i = 0;
+				tt();
+			}else{
+				$i = 1;
+				tt(1);
+			}
+			//console.log(t);
+			//clearInterval(sss);
+			setTimeout("fade($i)",1000);
+		}
+		//图标透明度从.1到1闪烁
+		function tt(t){
+			if(t){
+				$(".up").animate({"opacity":"1"},500);
+			}else{
+				$(".up").animate({"opacity":".1"},500);
+			}
+		}
+	</script>
+<body>
+</html>
